@@ -1,0 +1,258 @@
+@media (max-width: 1300px) {
+    header nav.navbar .navbar-brand {
+        width: 20%;
+    }
+
+    header nav.navbar {
+        border: none;
+    }
+
+    header nav.navbar .navbar-toggler {
+        background-color: transparent;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border: 1px solid #4d8b55;
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+
+    header nav.navbar .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    header nav.navbar .navbar-toggler[aria-expanded="true"] {
+        background-color: #fff;
+        border-color: #fff;
+    }
+
+    header nav.navbar .navbar-toggler span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: #4d8b55;
+    }
+
+    header nav.navbar .navbar-collapse {
+        background-color: #000;
+        text-align: center;
+        padding: 10px 0px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    header nav.navbar i.fa-user {
+        margin: auto;
+    }
+
+    header nav.navbar .nav-item {
+        margin: 0;
+    }
+
+    header nav.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+        margin-right: 0px;
+        width: 90%;
+        margin: auto;
+    }
+
+    header nav.navbar .dropdown-menu {
+        margin: 10px;
+    }
+
+    header #carouselExampleFade .carousel-inner .carousel-item .carousel-caption h2 {
+        font-size: 30px;
+    }
+
+    header #carouselExampleFade .carousel-inner .carousel-item .carousel-caption P {
+        margin: 20px 0px;
+        width: 90%;
+        font-size: 16px;
+    }
+
+    #Services .special .special1 {
+        order: 2;
+    }
+
+    #Services .special .special2 {
+        order: 1;
+    }
+
+    #Menu #pills-tabContent .item {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #BeansCoffee h2 {
+        font-size: 22px;
+        text-shadow: 1.5px 1.5px 1px #362d27;
+    }
+
+    #BeansCoffee h3 {
+        font-size: 30px;
+    }
+
+    #BeansCoffee i {
+        font-size: 50px;
+    }
+
+    #Book form {
+        width: 90%;
+        margin: auto;
+    }
+
+    #Book .container {
+        background-image: none;
+    }
+
+    #Book form .input-group,
+    #Book form button {
+        width: 90%;
+    }
+
+    #VideoModal .modal-dialog .modal-content {
+        width: 90%;
+    }
+}
+
+@media (min-width: 371px) and (max-width: 1300px) {
+    header nav.navbar .navbar-brand {
+        width: 20%;
+    }
+
+    #Services img {
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+
+    #Menu #pills-tabContent .item {
+        width: 70%;
+    }
+
+    #BeansCoffee h2 {
+        font-size: 30px;
+    }
+
+    #BeansCoffee h3 {
+        font-size: 40px;
+    }
+
+    #BeansCoffee i {
+        font-size: 70px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1300px) {
+    header nav.navbar .navbar-brand {
+        width: 15%;
+    }
+
+    header #carouselExampleFade .carousel-inner .carousel-item .carousel-caption h2 {
+        font-size: 40px;
+    }
+
+    #Menu #pills-tabContent .item {
+        width: 100%;
+    }
+
+    #BeansCoffee h2 {
+        font-size: 40px;
+    }
+
+    #BeansCoffee h3 {
+        font-size: 50px;
+    }
+
+    #BeansCoffee i {
+        font-size: 90px;
+    }
+
+    #Book form {
+        width: 50%;
+        margin: initial;
+        margin-left: auto;
+    }
+
+    #Book .container {
+        background-image: url("../images/black-contact-girl-1.png");
+        background-size: 50%;
+    }
+
+    #VideoModal .modal-dialog .modal-content {
+        width: 70%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+    header nav.navbar .navbar-brand {
+        width: 12%;
+    }
+
+    header #carouselExampleFade .carousel-inner .carousel-item .carousel-caption h2 {
+        font-size: 50px;
+    }
+
+    #Services img {
+        width: 50%;
+    }
+
+    #BeansCoffee h2 {
+        font-size: 50px;
+    }
+
+    #BeansCoffee h3 {
+        font-size: 60px;
+    }
+
+    #BeansCoffee i {
+        font-size: 100px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1300px) {
+    header nav.navbar .navbar-brand {
+        width: 8%;
+    }
+
+    header nav.navbar .navbar-toggler {
+        display: none;
+    }
+
+    header nav.navbar .navbar-collapse {
+        background-color: transparent;
+    }
+
+    header nav.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+        margin-right: 20px;
+        width: initial;
+    }
+
+    header #carouselExampleFade .carousel-inner .carousel-item .carousel-caption h2 {
+        font-size: 60px;
+    }
+
+    #About .container > .row .part2 .box .item {
+        width: 100%;
+    }
+
+    #Services img {
+        width: 100%;
+    }
+
+    #Services .special .special1 {
+        order: 1;
+    }
+
+    #Services .special .special2 {
+        order: 2;
+    }
+
+    #VideoModal .modal-dialog .modal-content {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1181px) and (max-width: 1300px) {
+}

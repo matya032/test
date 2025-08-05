@@ -1,0 +1,748 @@
+body {
+    /* background-color: #362d27; */
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    background-image: url("../images/leaves_pattern.png");
+    background-color: #4d8b55;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Sansita Swashed", cursive;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+header {
+    height: 100vh;
+    position: relative;
+}
+
+header nav.navbar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    padding: 20px 0px;
+}
+
+header nav.navbar .navbar-brand {
+    width: 7%;
+}
+
+header nav.navbar .navbar-brand i {
+    color: #4d8b55;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+header nav.navbar .navbar-brand h1 {
+    color: #fff;
+}
+
+header nav.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    position: relative;
+    margin-right: 20px;
+}
+
+header nav.navbar .navbar-collapse .navbar-nav .nav-item .nav-link span:not(.text) {
+    width: 0%;
+    height: 33.33%;
+    position: absolute;
+    background-color: #4d8b55;
+    z-index: 1;
+    transition-duration: 0.5s;
+}
+
+header nav.navbar .navbar-collapse .navbar-nav .nav-item .nav-link span.left-top {
+    top: 1px;
+    left: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+header nav.navbar .navbar-collapse .navbar-nav .nav-item .nav-link span.right-middle {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+header nav.navbar .navbar-collapse .navbar-nav .nav-item .nav-link span.left-bottom {
+    bottom: 1px;
+    left: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+header nav.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover span.left-top,
+header nav.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover span.left-bottom,
+header nav.navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active span.left-top,
+header nav.navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active span.left-bottom {
+    width: 100%;
+}
+
+header nav.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover span.right-middle,
+header nav.navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active span.right-middle {
+    width: 100%;
+    right: 0%;
+}
+
+header nav.navbar .navbar-collapse .navbar-nav .nav-item .nav-link span.text {
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 2;
+}
+
+header #carouselExampleFade .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: rgba(76, 138, 84, 0.5);
+    margin-right: 5px;
+}
+
+header #carouselExampleFade .carousel-indicators button.active {
+    background-color: #4d8b55;
+}
+
+header #carouselExampleFade .carousel-inner .carousel-item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header #carouselExampleFade .carousel-inner .carousel-item:nth-of-type(1) {
+    background-image: url("../images/banner1.jpg");
+}
+
+header #carouselExampleFade .carousel-inner .carousel-item:nth-of-type(2) {
+    background-image: url("../images/banner2.jpg");
+}
+
+header #carouselExampleFade .carousel-inner .carousel-item:nth-of-type(3) {
+    background-image: url("../images/banner3.jpg");
+}
+
+header #carouselExampleFade .carousel-inner .carousel-item:nth-of-type(4) {
+    background-image: url("../images/banner4.jpg");
+}
+
+header #carouselExampleFade .carousel-inner .carousel-item::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+header #carouselExampleFade .carousel-inner .carousel-item .carousel-caption {
+    text-align: left;
+    bottom: initial;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header #carouselExampleFade .carousel-inner .carousel-item .carousel-caption h2 {
+    font-size: 70px;
+    letter-spacing: 1.5px;
+    color: #4d8b55;
+    position: relative;
+    top: -30px;
+    opacity: 0;
+    transition-duration: 1s;
+    transition-delay: 0s;
+}
+
+header #carouselExampleFade .carousel-inner .carousel-item.active .carousel-caption h2 {
+    top: 0;
+    opacity: 1;
+}
+
+header #carouselExampleFade .carousel-inner .carousel-item .carousel-caption P {
+    margin: 40px 0px;
+    width: 80%;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    position: relative;
+    top: -30px;
+    opacity: 0;
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+}
+
+header #carouselExampleFade .carousel-inner .carousel-item.active .carousel-caption p {
+    top: 0;
+    opacity: 1;
+}
+
+header #carouselExampleFade .carousel-inner .carousel-item .carousel-caption a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100%;
+    width: 100%;
+    border-top: 25px solid #4d8b55;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid #4d8b55;
+    border-left: 25px solid #4d8b55;
+    z-index: 1;
+    transition-duration: 1s;
+}
+
+header #carouselExampleFade .carousel-inner .carousel-item .carousel-caption a:hover::before {
+    right: 0;
+}
+
+header #carouselExampleFade .carousel-inner .carousel-item .carousel-caption a {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    border: 1px solid #4d8b55;
+    overflow: hidden;
+    position: relative;
+    top: -30px;
+    opacity: 0;
+    transition: all 1s ease 0.4s;
+}
+
+header #carouselExampleFade .carousel-inner .carousel-item.active .carousel-caption a {
+    top: 0;
+    opacity: 1;
+}
+
+header #carouselExampleFade .carousel-inner .carousel-item .carousel-caption a span {
+    position: relative;
+    z-index: 2;
+    color: #4d8b55;
+    transition-duration: 1s;
+    font-weight: 700;
+}
+
+header #carouselExampleFade .carousel-inner .carousel-item .carousel-caption a:hover span {
+    color: #fff;
+    font-weight: 500;
+}
+
+header #carouselExampleFade .carousel-inner .carousel-item .carousel-caption a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+    width: 100%;
+    border-top: 25px solid #4d8b55;
+    border-right: 25px solid #4d8b55;
+    border-bottom: 25px solid #4d8b55;
+    border-left: 25px solid transparent;
+    z-index: 1;
+    transition-duration: 1s;
+}
+
+header #carouselExampleFade .carousel-inner .carousel-item .carousel-caption a:hover::after {
+    left: 0;
+}
+
+#About .container>.row .part1 .item>span {
+    display: block;
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+#About .container>.row .part1 h2 {
+    letter-spacing: 1.5px;
+    font-size: 45px;
+}
+
+#About .container>.row .part1 p {
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+#About .container>.row .part1 button::before {
+    content: "";
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: -50%;
+    left: 0;
+    transition-duration: 0.5s;
+}
+
+#About .container>.row .part1 button:hover::before {
+    top: 0;
+}
+
+#About .container>.row .part1 button {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    border: 1px solid #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+#About .container>.row .part1 button span {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    transition-duration: 0.5s;
+    font-weight: bolder;
+}
+
+#About .container>.row .part1 button:hover span {
+    color: #4d8b55;
+    font-weight: bolder;
+}
+
+#About .container>.row .part1 button::after {
+    content: "";
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    transition-duration: 0.5s;
+}
+
+#About .container>.row .part1 button:hover::after {
+    bottom: 0;
+}
+
+#About .container>.row .part2 .box .item {
+    border-radius: 10px;
+    position: relative;
+    width: 230px;
+    height: 390px;
+    margin: auto;
+}
+
+#About .container>.row .part2 .box .item .front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+    transition-property: transform;
+    transition-duration: 2s;
+    border-radius: 10px;
+}
+
+#About .container>.row .part2 .box:nth-of-type(1) .item .front {
+    background-image: url("../images/about_front_01.jpg");
+}
+
+#About .container>.row .part2 .box:nth-of-type(2) .item .front {
+    background-image: url("../images/about_front_02.jpg");
+}
+
+#About .container>.row .part2 .box:nth-of-type(3) .item .front {
+    background-image: url("../images/about_front_03.jpg");
+}
+
+#About .container>.row .part2 .box .item:hover .front {
+    transform: rotateY(180deg);
+}
+
+#About .container>.row .part2 .box .item .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition-property: transform;
+    transition-duration: 2s;
+    border-radius: 10px;
+}
+
+#About .container>.row .part2 .box:nth-of-type(1) .item .back {
+    background-color: #404042;
+}
+
+#About .container>.row .part2 .box:nth-of-type(2) .item .back {
+    background-color: #87744a;
+}
+
+#About .container>.row .part2 .box:nth-of-type(3) .item .back {
+    background-color: #6d1f37;
+}
+
+#About .container>.row .part2 .box .item:hover .back {
+    transform: rotateY(0deg);
+}
+
+#About .container>.row .part2 .box .item .back .head,
+#About .container>.row .part2 .box .item .back .head img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#About .container>.row .part2 .box .item .back .body button {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    border: 1px solid #fff;
+    position: relative;
+    color: #fff;
+    border-radius: 15px;
+    padding: 5px 20px;
+    transition-duration: 0.5s;
+}
+
+#About .container>.row .part2 .box:nth-of-type(1) .item .back .body button:hover {
+    background-color: #fff;
+    color: #404042;
+    font-weight: bolder;
+}
+
+#About .container>.row .part2 .box:nth-of-type(2) .item .back .body button:hover {
+    background-color: #fff;
+    color: #87744a;
+    font-weight: bolder;
+}
+
+#About .container>.row .part2 .box:nth-of-type(3) .item .back .body button:hover {
+    background-color: #fff;
+    color: #6d1f37;
+    font-weight: bolder;
+}
+
+#About .container>.row .part2 .box .item .back .body button i {
+    transition-property: margin-left;
+    transition-duration: 0.5s;
+}
+
+#About .container>.row .part2 .box .item .back .body button:hover i {
+    margin-left: 5px;
+}
+
+.header {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+.header h2 {
+    font-size: 40px;
+}
+
+#Services {
+    background-image: url("../images/beans_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#Services::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#Services .container {
+    position: relative;
+    z-index: 2;
+}
+
+#Services i {
+    font-size: 40px;
+    color: #4d8b55;
+}
+
+#Services p {
+    color: #c2c2c2;
+}
+
+#Services .part2 img {
+    animation-name: upDown;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-25px);
+    }
+}
+
+#Menu .cover {
+    overflow: auto;
+}
+
+#Menu .cover ul.nav {
+    width: max-content;
+    margin: auto;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+#Menu .cover ul.nav li.nav-item:not(:last-child) {
+    margin-right: 15px;
+}
+
+#Menu .cover ul.nav li.nav-item button {
+    background-color: transparent;
+    border-radius: 5px;
+    color: #fff;
+    transition-duration: 0.5s;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+}
+
+#Menu .cover ul.nav li.nav-item button.active,
+#Menu .cover ul.nav li.nav-item button:hover {
+    background-color: #fff;
+    color: #4d8b55;
+    border-radius: 5px;
+}
+
+#Menu #pills-tabContent .item {
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+    transform: scale(0);
+}
+
+#Menu #pills-tabContent .tab-pane.show .item {
+    transform: scale(1);
+    transition-duration: 1s;
+}
+
+#Menu #pills-tabContent .item img {
+    transform: scale(0.8);
+    transition-duration: 1s;
+}
+
+#Menu #pills-tabContent .item:hover img {
+    transform: scale(1);
+}
+
+#Menu #pills-tabContent .item h6 {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-image: url("../images/leaves_pattern.png");
+    background-color: #4d8b55;
+    padding: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transform: translateX(-100%);
+    transition-duration: 1s;
+}
+
+#Menu #pills-tabContent .item:hover h6 {
+    transform: translateX(0%);
+}
+
+#Menu #pills-tabContent .item p {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    background-image: url("../images/leaves_pattern.png");
+    background-color: #4d8b55;
+    padding: 5px 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transform: translateX(-100%);
+    transition-duration: 1s;
+}
+
+#Menu #pills-tabContent .item:hover p {
+    transform: translateX(0%);
+}
+
+#BeansCoffee {
+    background-image: url("../images/ice_drinks_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#BeansCoffee::before {
+    content: "";
+    display: block;
+    background-color: rgba(54, 45, 39, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#BeansCoffee .content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#BeansCoffee h2 {
+    font-size: 80px;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+    color: #4d8b55;
+    text-shadow: 3px 3px 1px #362d27;
+}
+
+#BeansCoffee h3 {
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+#BeansCoffee i {
+    font-size: 90px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+#BeansCoffee i:hover {
+    color: #4d8b55;
+}
+
+#VideoModal {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+#VideoModal .modal-dialog {
+    max-width: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#VideoModal .modal-dialog .modal-content {
+    background-color: transparent;
+    width: 50%;
+}
+
+#VideoModal .modal-dialog .modal-content video {
+    border-radius: 10px;
+}
+
+#Book {
+    background-image: url("../images/black-bg.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#Book .container {
+    min-height: 100vh;
+    background-image: url("../images/girl.png");
+    background-position: left bottom;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+#Book form {
+    background-image: url("../images/leaves_pattern.png");
+    background-color: #4d8b55;
+    border-radius: 10px;
+    margin-left: auto;
+    width: 40%;
+}
+
+#Book form .input-group,
+#Book form button {
+    width: 80%;
+    margin: auto;
+}
+
+#Book form button {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #4d8b55;
+    transition-duration: 0.5s;
+}
+
+#Book form button:hover {
+    border-color: #fff;
+}
+
+#Book form button span {
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+    position: relative;
+    z-index: 2;
+}
+
+#Book form button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4d8b55;
+    transition-duration: 0.5s;
+    z-index: 1;
+}
+
+#Book form button:hover::after {
+    bottom: 0%;
+}
+
+#Book form input:focus,
+#Book form textarea:focus {
+    box-shadow: none;
+}
+
+#Book form textarea {
+    resize: none;
+}
+
+footer {
+    background-color: #333;
+}
+
+footer #SemiCode {
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+}
